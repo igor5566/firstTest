@@ -35,19 +35,6 @@ public class GooglePage extends FirstClass {
        wait.until(presenceOfElementLocated(By.cssSelector("div[id='DoneButton'] > button")));
        String s = driver.getCurrentUrl();
        assertTrue(s.contains("jsfiller"));
-
-       WebElement editorBtn = wait.until(visibilityOfElementLocated(By.cssSelector("div.collapsed-right-sidebar__list-item:nth-child(1) button")));
-       editorBtn.click();
-
-       WebElement textFieldBtn = wait.until(presenceOfElementLocated(By.cssSelector("div.menu__body ul li:nth-child(1) button")));
-       //textFieldBtn.click();
-       WebElement field = driver.findElement(By.xpath("//div[@class='elementsWrapper-Content']/button"));
-
-       actions.dragAndDrop(textFieldBtn, field).build().perform();
-
-       //actions.moveToElement(textFieldBtn).clickAndHold().moveByOffset(450,150).release().build().perform();
-       //actions.perform();
-
     }
 
 }

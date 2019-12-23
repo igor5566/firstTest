@@ -20,7 +20,7 @@ public class FirstClass {
     public void setDriver() {
         options = new ChromeOptions();
         options.addArguments("--disable-notifications");
-        System.setProperty("webdriver.chrome.driver", "/Users/ihor/Documents/apps/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "chromedriver");
         driver = new ChromeDriver(options);
         wait = new WebDriverWait(driver,10);
         actions = new Actions(driver);
