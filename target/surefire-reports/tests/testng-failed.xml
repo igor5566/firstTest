@@ -7,6 +7,22 @@
     </packages>
     <classes>
       <class name="com.firstSite.FirstClass"/>
+      <class name="com.firstSite.GooglePage"/>
     </classes>
   </test> <!-- First -->
+  <test name="First(failed)" parallel="tests">
+    <classes>
+      <class name="com.firstSite.GooglePage">
+        <methods>
+          <include name="getSearchPage"/>
+        </methods>
+      </class> <!-- com.firstSite.GooglePage -->
+      <class name="com.firstSite.FirstClass">
+        <methods>
+          <include name="setDriver"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.firstSite.FirstClass -->
+    </classes>
+  </test> <!-- First(failed) -->
 </suite> <!-- Failed suite [tests] -->
