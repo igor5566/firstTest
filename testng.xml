@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+    <suite name="tests" parallel="tests" thread-count="2">
+        <test name="First">
+<!--            <groups>-->
+<!--                <run>-->
+<!--                    <include name="web"/>-->
+<!--                    <include name="a"/>-->
+<!--                </run>-->
+<!--            </groups>-->
+            <packages>
+<!--                <package name="com.firstSite"></package>-->
+                <package name="com.firstSite"></package>
+            </packages>
+        </test>
+    </suite>
