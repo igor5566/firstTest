@@ -20,9 +20,9 @@ public class GooglePage extends FirstClass {
     public void getSearchPage() throws InterruptedException {
        driver.get("https://www.pdffiller.com/en/login.htm");
        WebElement login = wait.until(visibilityOfElementLocated(By.cssSelector("input[name='username']")));
-       login.sendKeys("test555@gmail.com");
+       login.sendKeys("******");
        WebElement pass = wait.until(visibilityOfElementLocated(By.cssSelector("input[name='password']")));
-       pass.sendKeys("test12345", Keys.ENTER);
+       pass.sendKeys("******", Keys.ENTER);
 
        WebElement add = wait.until(visibilityOfElementLocated(By.cssSelector("button[class='g-btn g-btn--primary g-btn--sm']")));
        actions.moveToElement(add).build().perform();
