@@ -41,9 +41,13 @@ public class GooglePage extends FirstClass {
 
    @DataProvider(name = "data")
    public Object[][] getData() {
-      Object[][] data = new Object[1][2];
+      Object[][] data = new Object[2][2];
+
       data[0][1] = "test555@gmail.com";
       data[0][2] = "test12345";
+
+      data[1][1] = "test12345@gmail.com";
+      data[1][2] = "test12345";
       return data;
    }
 
