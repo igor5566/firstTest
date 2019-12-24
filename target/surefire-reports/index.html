@@ -102,7 +102,7 @@
                     <div class="method-list-content skipped suite-tests">
                       <span>
                         <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-tests" title="com.firstSite.GooglePage" hash-for-method="getSearchPage">getSearchPage</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-tests" title="com.firstSite.GooglePage" hash-for-method="getSearchPage(test555@gmail.com, test12345)">getSearchPage(test555@gmail.com, test12345)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content skipped suite-tests -->
@@ -125,19 +125,10 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="getSearchPage">
-                  </a> <!-- getSearchPage -->
+                  <a name="getSearchPage(test555@gmail.com, test12345)">
+                  </a> <!-- getSearchPage(test555@gmail.com, test12345) -->
                   <span class="method-name">getSearchPage</span>
-                  <div class="stack-trace">java.lang.RuntimeException: java.lang.ArrayIndexOutOfBoundsException: 2
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.lang.ArrayIndexOutOfBoundsException: 2
-	at com.firstSite.GooglePage.getData(GooglePage.java:24)
-	... 16 more
-... Removed 19 stack frames
-</div> <!-- stack-trace -->
+                  <span class="parameters">(test555@gmail.com, test12345)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -145,7 +136,7 @@ Caused by: java.lang.ArrayIndexOutOfBoundsException: 2
         </div> <!-- panel tests -->
         <div panel-name="test-xml-tests" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/home/igor/IdeaProjects/test02/firstTest/testng.xml</span>
+            <span class="header-content">/Users/ihor/Documents/GitHub/firstTest/testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -157,8 +148,8 @@ Caused by: java.lang.ArrayIndexOutOfBoundsException: 2
       &lt;package name=&quot;com.firstSite&quot;/&gt;
     &lt;/packages&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.firstSite.FirstClass&quot;/&gt;
       &lt;class name=&quot;com.firstSite.GooglePage&quot;/&gt;
+      &lt;class name=&quot;com.firstSite.FirstClass&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- First --&gt;
 &lt;/suite&gt; &lt;!-- tests --&gt;
@@ -202,12 +193,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'getSearchPage')
 data.setCell(0, 2, 'com.firstSite.GooglePage')
-data.setCell(0, 3, 0);
+data.setCell(0, 3, 1);
 window.suiteTableData['tests']= { tableData: data, tableDiv: 'times-div-tests'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 1 ms</span>
               <div id="times-div-tests">
               </div> <!-- times-div-tests -->
             </div> <!-- times-div -->
@@ -226,7 +217,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.firstSite.GooglePage</span>
+              <span class="ignored-class-name">com.firstSite.FirstClass</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">setDriver</span>
                 <br/>
@@ -242,15 +233,17 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.firstSite.FirstClass</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.firstSite.GooglePage</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">setDriver</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
-              <div class="configuration-suite after">
-                <span class="method-name">closeBrowser</span>
-                <span class="method-start">2091 ms</span>
-              </div> <!-- configuration-suite after -->
+              <div class="test-method">
+                <span class="method-name">getSearchPage(test555@gmail.com, test12345)</span>
+                <span class="method-start">21010 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

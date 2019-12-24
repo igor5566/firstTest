@@ -26,7 +26,7 @@ public class GooglePage extends FirstClass {
         addDocumentBtn.click();
 
         WebElement input = wait.until(presenceOfElementLocated(By.cssSelector("div[class='drop-zone'] input[accept]")));
-        input.sendKeys("/home/igor/doc1");
+        input.sendKeys("AL-P003A .pdf");
 
         wait.until(presenceOfElementLocated(By.cssSelector("div[id='DoneButton'] > button")));
         String s = driver.getCurrentUrl();
