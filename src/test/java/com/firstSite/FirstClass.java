@@ -20,6 +20,7 @@ public class FirstClass {
     public void setDriver() {
         options = new ChromeOptions();
         options.addArguments("--disable-notifications");
+        options.addArguments("--no-sandbox");
         System.setProperty("webdriver.chrome.driver", "chromedriver");
         driver = new ChromeDriver(options);
         wait = new WebDriverWait(driver, 10);
