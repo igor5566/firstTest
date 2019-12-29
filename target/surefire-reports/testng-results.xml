@@ -2,22 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="tests" duration-ms="1658" started-at="2019-12-29T19:22:47Z" finished-at="2019-12-29T19:22:49Z">
+  <suite name="tests" duration-ms="10847" started-at="2019-12-29T20:30:27Z" finished-at="2019-12-29T20:30:38Z">
     <groups>
     </groups>
-    <test name="First" duration-ms="1658" started-at="2019-12-29T19:22:47Z" finished-at="2019-12-29T19:22:49Z">
-      <class name="com.firstSite.FirstClass">
-        <test-method status="PASS" signature="setDriver()[pri:0, instance:com.firstSite.FirstClass@2d554825]" name="setDriver" is-config="true" duration-ms="2029" started-at="2019-12-29T21:22:45Z" finished-at="2019-12-29T21:22:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setDriver -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.firstSite.FirstClass@2d554825]" name="closeBrowser" is-config="true" duration-ms="75" started-at="2019-12-29T21:22:49Z" finished-at="2019-12-29T21:22:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- com.firstSite.FirstClass -->
+    <test name="First" duration-ms="10847" started-at="2019-12-29T20:30:27Z" finished-at="2019-12-29T20:30:38Z">
       <class name="com.firstSite.GooglePage">
-        <test-method status="PASS" signature="getSearchPage()[pri:0, instance:com.firstSite.GooglePage@68837a77]" name="getSearchPage" duration-ms="1619" started-at="2019-12-29T21:22:47Z" finished-at="2019-12-29T21:22:49Z">
+        <test-method status="PASS" signature="getSearchPage()[pri:0, instance:com.firstSite.GooglePage@2c6a3f77]" name="getSearchPage" duration-ms="10818" started-at="2019-12-29T22:30:27Z" finished-at="2019-12-29T22:30:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getSearchPage -->
