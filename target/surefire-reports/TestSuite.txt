@@ -1,4 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
+<<<<<<< HEAD
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.676 s - in TestSuite
+=======
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 3, Time elapsed: 31.523 s <<< FAILURE! - in TestSuite
+com.firstSite.GooglePage.setDriver  Time elapsed: 21.368 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Timed out waiting for driver server to start.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'adminpdfs-MacBook-Air.local', ip: 'fe80:0:0:0:10e8:a73:c09f:ef31%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.2', java.version: '1.8.0_212'
+Driver info: driver.version: ChromeDriver
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:22297/status] to be available after 20007 ms
+Caused by: java.util.concurrent.TimeoutException
+
+>>>>>>> da07ae2f26176db0d7ed3693a50beb83cd0d80a4
