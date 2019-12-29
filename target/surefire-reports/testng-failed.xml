@@ -1,28 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="2" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [tests]" parallel="tests">
-  <test name="First">
-    <packages>
-      <package name="com.firstSite"/>
-    </packages>
-    <classes>
-      <class name="com.firstSite.FirstClass"/>
-      <class name="com.firstSite.GooglePage"/>
-    </classes>
-  </test> <!-- First -->
   <test name="First(failed)" parallel="tests">
     <classes>
+      <class name="com.firstSite.FirstClass">
+        <methods>
+          <include name="setDriver"/>
+        </methods>
+      </class> <!-- com.firstSite.FirstClass -->
       <class name="com.firstSite.GooglePage">
         <methods>
           <include name="getSearchPage"/>
         </methods>
       </class> <!-- com.firstSite.GooglePage -->
-      <class name="com.firstSite.FirstClass">
-        <methods>
-          <include name="setDriver"/>
-          <include name="closeBrowser"/>
-        </methods>
-      </class> <!-- com.firstSite.FirstClass -->
     </classes>
   </test> <!-- First(failed) -->
 </suite> <!-- Failed suite [tests] -->
